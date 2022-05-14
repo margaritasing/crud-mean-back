@@ -3,15 +3,17 @@ const conectarDb = require('./config/db')
 
 const app = express()
 
-//conectamos a la db
+//middleware
+app.use(express.json())
 
+
+//conectamos a la db
 conectarDb()
+
+//rutas
 app.use('/api/productos', require('./routes/producto'))
 
-//Definimos ruta principal
-/* app.get('/', (req, res)=>{
-    res.send('que fue')
-}) */
+
 
 app.listen(4000, ()=> {
     console.log("Servidor corriendo en el 4000")
