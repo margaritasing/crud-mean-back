@@ -1,0 +1,19 @@
+{
+  "name": "productoapi",
+  "version": "1.0.0",
+  "description": "crud mean",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ."    
+  },
+  "author": "margarita-sing",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3"
+  }
+}
